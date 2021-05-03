@@ -11,8 +11,8 @@ server.get("/:kodesparepart/:namasparepart/:qty", function(req, res){
     res.send(req.params);
 })
 
-var dataBuku = bodyParser.urlencoded({ extended: false });
-server.post("/api/datagudang", dataBuku, function (req, res) {
+var dataSparepart = bodyParser.urlencoded({ extended: false });
+server.post("/api/datagudang", dataSparepart, function (req, res) {
   res.send(req.body);
 });
 
